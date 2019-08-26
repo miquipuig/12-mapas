@@ -1,5 +1,23 @@
 <mat-card>
 
     <mat-card-title>Título tarjeta</mat-card-title>
-    <mat-card-content>zxc</mat-card-content>
-</mat-card>>
+    <mat-card-content>
+
+        <agm-map [latitude]="lat" [longitude]="lng" [zoom]="15">
+            <agm-marker [latitude]="lat" [longitude]="lng">
+                <agm-info-window>
+
+                    <strong>Titulo</strong>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae debitis qui quaerat repellendus, vitae voluptate sunt esse, vero quasi quibusdam delectus! Rerum sequi tempore modi repudiandae dolor voluptatem similique nam.</p>
+                    <div>
+                        <button mat-raised-button color="primary">Editar</button>
+                        <button mat-raised-button color="warn">Borar</button>
+                    </div>
+                </agm-info-window>
+            </agm-marker>
+
+        </agm-map>
+
+    </mat-card-content>
+
+</mat-card>
